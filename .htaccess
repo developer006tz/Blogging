@@ -1,0 +1,4 @@
+RewriteEngine On
+RewriteCond %{REQUEST_URI} !(/assets/)
+RewriteCond $1 !^(robots.txt|ads.txt)
+RewriteRule ^(.*)$ routes.php [QSA,L]
